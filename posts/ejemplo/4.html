@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../shared.css">
+  <style>
+    /* Slide 4: 3 imágenes verticales con proporciones 1/6, 3/6, 2/6 */
+    .page {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr 2fr;
+      grid-template-areas:
+        "a"
+        "b"
+        "c";
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img src="assets/4.jpg" style="grid-area: a; object-position: 50% 60%">
+    <img src="assets/1.jpg" style="grid-area: b; object-position: 50% 45%">
+    <img src="assets/5.jpg" style="grid-area: c; object-position: 50% 30%">
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../shared.css">
+  <style>
+    /* Slide 2: foto panorámica arriba ocupando todo el ancho, dos fotos abajo */
+    .page {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1.4fr 1fr;
+      grid-template-areas:
+        "a a"
+        "b c";
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img src="assets/4.jpg" style="grid-area: a; object-position: 50% 30%">
+    <img src="assets/5.jpg" style="grid-area: b; object-position: 30% 50%">
+    <img src="assets/6.jpg" style="grid-area: c; object-position: 70% 50%">
+  </div>
+</body>
+</html>

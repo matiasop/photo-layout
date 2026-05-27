@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../shared.css">
+  <style>
+    /* Slide 6: grilla entrelazada — imágenes que se extienden en L y cruzan filas/columnas */
+    .page {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "a a b"
+        "c d b"
+        "c e e";
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img src="assets/1.jpg" style="grid-area: a; object-position: 50% 70%">
+    <img src="assets/2.jpg" style="grid-area: b; object-position: 60% 50%">
+    <img src="assets/3.jpg" style="grid-area: c; object-position: 50% 40%">
+    <img src="assets/4.jpg" style="grid-area: d; object-position: 50% 50%">
+    <img src="assets/5.jpg" style="grid-area: e; object-position: 40% 40%">
+  </div>
+</body>
+</html>
