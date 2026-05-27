@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../../shared.css">
+  <style>
+    .page {
+      /* Define el grid de esta página */
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "a b"
+        "c d";
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <img src="assets/1.jpg" style="grid-area: a">
+    <img src="assets/2.jpg" style="grid-area: b">
+    <img src="assets/3.jpg" style="grid-area: c">
+    <img src="assets/4.jpg" style="grid-area: d">
+  </div>
+</body>
+</html>
