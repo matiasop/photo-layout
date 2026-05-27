@@ -9,6 +9,9 @@ dist
 # generated export images
 export/
 
+# real post assets (not committed — add examples/ for sample content)
+posts/*/assets/
+
 # brainstorming session files
 .superpowers/
 
